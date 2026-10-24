@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miko | Web Development Student Portfolio</title>
+  <meta name="description" content="Portfolio of Miko, a web development student from Cebu City building accessible, responsive websites.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">My Portfolio</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">Web Development Student</p>
+        <h1>Hi, I'm <span class="accent">Miko</span>.</h1>
+        <p class="lead">I build responsive, user-friendly websites for phones and computers. I'm especially passionate about public-service websites that make everyday tasks simpler and more accessible.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <p>I'm Miko, a 22-year-old student from Cebu City. I'm building my web development skills through class projects, starting with the front end and working toward full-stack.</p>
+        <p>My biggest project so far is a team-built School Based website for the Commission on Human Rights (CHR) Philippines. I also worked on a car buying, selling, and rental website.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>What I can do now</h3>
+            <ul class="tags">
+              <li>Structure pages with HTML5</li>
+              <li>Style pages with CSS3</li>
+              <li>Create navigation bars and dropdown menus</li>
+              <li>Write basic JavaScript</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>What I'm still learning</h3>
+            <ul class="tags learning">
+              <li>PHP and MySQL (my team used them for the backend)</li>
+              <li>Bootstrap and jQuery</li>
+              <li>Git and publishing sites online</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid two">
+
+          <article class="card project">
+            <div class="shot">
+              <img src="IMG_20261024_100517.jpg" alt="Screenshot of the CHR Human Rights E-Services website" loading="lazy">
+            </div>
+            <h3>CHR Philippines: School Based Website</h3>
+            <p class="meta">Team project &middot; Class project</p>
+            <p>A school-based website for the Commission on Human Rights (CHR) Philippines, titled "Human Rights E-Services". My team used PHP and MySQL for the backend.</p>
+            
+            <!-- Add a working link when available: <a class="btn btn-small" href="YOUR-LINK">View project</a> -->
+          </article>
+
+          <article class="card project">
+            <div class="shot">
+              <img src="Messenger_creation_667D2496-C069-4C4E-AD7C-537615E3539F.png" alt="Screenshot of the Asphalt car buying, selling and rental website" loading="lazy">
+            </div>
+            <h3>Asphalt: Car Buy, Sell &amp; Rental Website</h3>
+            <p class="meta">Class project</p>
+            <p>A responsive website where visitors can browse, buy, rent, or sell cars. It has a navigation bar (Home, Car Rentals, Shop Cars, Featured), a sign-in button, and a bold hero section with key numbers.</p>
+            
+            <!-- Add a working link when available: <a class="btn btn-small" href="YOUR-LINK">View project</a> -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I'm open to learning opportunities, collaboration, and feedback on my work. The best way to reach me is by email.</p>
+        <a class="btn btn-primary" href="mailto:mikojakosalem2004@gmail.com">mikojakosalem2004@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Miko.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
